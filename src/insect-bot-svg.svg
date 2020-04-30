@@ -1,0 +1,92 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.75 191.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c00a1;
+      }
+
+      .cls-2 {
+        fill: #04005d;
+      }
+
+      .cls-3 {
+        fill: #010056;
+      }
+
+      .cls-4 {
+        fill: #020089;
+      }
+
+      .cls-5 {
+        fill: #000a3a;
+      }
+
+      .cls-6 {
+        fill: #06005d;
+      }
+
+      .cls-7 {
+        fill: #900030;
+      }
+
+      .cls-8 {
+        fill: #df0019;
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-10 {
+        fill: none;
+        stroke: #1b0094;
+        stroke-miterlimit: 10;
+        stroke-width: 2.25px;
+        opacity: 0.52;
+      }
+
+      .cls-11 {
+        fill: #a10028;
+      }
+
+      .cls-12 {
+        fill: #000848;
+      }
+    </style>
+  </defs>
+  <title>insect bot svg</title>
+  <polygon class="cls-1" points="104.25 191.63 154.42 41.96 54.08 41.96 104.25 191.63"/>
+  <polygon class="cls-2" points="104.38 191.63 129 118.46 79.75 118.46 104.38 191.63"/>
+  <rect class="cls-3" x="334.12" y="255.25" width="20.87" height="64.88" rx="9.37" ry="9.37" transform="translate(539.87 374.34) rotate(-180)"/>
+  <rect class="cls-3" x="312.5" y="226.06" width="27.25" height="50.9" transform="translate(-231.57 103.24) rotate(-45)"/>
+  <rect class="cls-4" x="304.75" y="237.5" width="45.5" height="17.75" rx="8.87" ry="8.87" transform="translate(235.61 451.13) rotate(-135)"/>
+  <rect class="cls-3" y="52.46" width="20.87" height="64.88" rx="9.37" ry="9.37"/>
+  <rect class="cls-3" x="164.49" y="224.31" width="27.25" height="50.9" transform="translate(-21.79 351.27) rotate(-135)"/>
+  <rect class="cls-4" x="154" y="235.75" width="45.5" height="17.75" rx="8.87" ry="8.87" transform="translate(-270.46 -4.41) rotate(-45)"/>
+  <polygon class="cls-5" points="116.13 52.84 130.97 67.69 181.41 17.25 183.9 1.84 166.56 2.4 116.13 52.84"/>
+  <polygon class="cls-6" points="120.69 57.54 127.07 63.91 177.51 13.47 183.68 1.75 171.14 7.1 120.69 57.54"/>
+  <polygon class="cls-5" points="90.89 51.09 76.05 65.94 25.61 15.5 23.13 0.09 40.45 0.65 90.89 51.09"/>
+  <polygon class="cls-6" points="86.32 55.79 79.95 62.16 29.51 11.72 23.34 0 35.88 5.35 86.32 55.79"/>
+  <path class="cls-5" d="M291.17,259.5c0,20.43-36.5,46.5-36.5,46.5s-37.5-26.07-37.5-46.5a37,37,0,0,1,74,0Z" transform="translate(-149.25 -201.04)"/>
+  <ellipse class="cls-7" cx="232.25" cy="286.5" rx="6.5" ry="11.75" transform="translate(-246.22 -80.77) rotate(-24.18)"/>
+  <ellipse class="cls-7" cx="274.75" cy="287.25" rx="11.75" ry="6.5" transform="translate(-249.08 219.2) rotate(-65.82)"/>
+  <ellipse class="cls-8" cx="234.05" cy="290.29" rx="4.11" ry="7.43" transform="translate(-247.62 -79.7) rotate(-24.18)"/>
+  <ellipse class="cls-8" cx="273.18" cy="291.16" rx="7.43" ry="4.11" transform="translate(-253.58 220.08) rotate(-65.82)"/>
+  <ellipse class="cls-9" cx="237.81" cy="293.16" rx="0.68" ry="1.22" transform="translate(-248.46 -77.91) rotate(-24.18)"/>
+  <ellipse class="cls-9" cx="269.31" cy="293.97" rx="1.22" ry="0.68" transform="translate(-258.42 218.21) rotate(-65.82)"/>
+  <line class="cls-10" x1="69.44" y1="49.13" x2="140.5" y2="49.13"/>
+  <line class="cls-10" x1="72.75" y1="41.12" x2="137" y2="41.12"/>
+  <rect class="cls-11" x="1" y="113.46" width="19.25" height="10" rx="5" ry="5"/>
+  <rect class="cls-8" x="5.5" y="115.38" width="14.75" height="8.17" rx="4.08" ry="4.08"/>
+  <rect class="cls-11" x="4.08" y="122.55" width="13.84" height="7.19" rx="3.6" ry="3.6"/>
+  <rect class="cls-8" x="7.32" y="123.92" width="10.61" height="5.87" rx="2.94" ry="2.94"/>
+  <rect class="cls-11" x="6.75" y="129.55" width="9.84" height="5.11" rx="2.56" ry="2.56"/>
+  <rect class="cls-8" x="9.05" y="130.53" width="7.54" height="4.17" rx="2.09" ry="2.09"/>
+  <rect class="cls-11" x="185.33" y="115.13" width="19.25" height="10" rx="5" ry="5"/>
+  <rect class="cls-8" x="189.83" y="117.04" width="14.75" height="8.17" rx="4.08" ry="4.08"/>
+  <rect class="cls-11" x="188.42" y="124.21" width="13.84" height="7.19" rx="3.6" ry="3.6"/>
+  <rect class="cls-8" x="191.65" y="125.59" width="10.61" height="5.87" rx="2.94" ry="2.94"/>
+  <rect class="cls-11" x="191.08" y="131.21" width="9.84" height="5.11" rx="2.56" ry="2.56"/>
+  <rect class="cls-8" x="193.38" y="132.19" width="7.54" height="4.17" rx="2.09" ry="2.09"/>
+  <polygon class="cls-12" points="104.25 191.88 116.5 155.46 92 155.46 104.25 191.88"/>
+</svg>

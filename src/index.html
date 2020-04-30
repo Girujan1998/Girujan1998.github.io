@@ -1,9 +1,37 @@
 ﻿<!DOCTYPE html>
 <html>
+
+<head>
+    <title>Robot.io</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+
 <body>
+    <canvas id="game-canvas"></canvas>
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <div id="login-page" class="hidden">
 
+        <img src="monster-cat-svg.svg" />
+
+        <div id="menu-window" class="hidden">
+            <h1>WELCOME TO THE GAME</h1>
+
+            <input type="text" id="username-input" placeholder="Enter Username..." />
+            <button id="start-button" onclick="startFunction()">START</button>
+        </div>
+    </div>
 </body>
 </html>
+
+<script>
+
+    function startFunction() {
+        var x = document.getElementById("login-page");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+</script>
