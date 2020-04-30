@@ -1,0 +1,65 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 234 261.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #060100;
+      }
+
+      .cls-1, .cls-7 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #ff1f38;
+      }
+
+      .cls-3 {
+        fill: #ed0042;
+      }
+
+      .cls-4 {
+        fill: #9e0046;
+      }
+
+      .cls-5 {
+        fill: #7f0011;
+      }
+
+      .cls-6 {
+        fill: #4f0013;
+      }
+
+      .cls-7 {
+        fill: #060500;
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="117.33" cy="215.17" r="60.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e73357"/>
+      <stop offset="1"/>
+    </radialGradient>
+  </defs>
+  <title>squid bot svg</title>
+  <path class="cls-1" d="M360.25,393.25H396V287.75H360.25V306c15.63,4.17,0,9,0,9V324s14.13,4,0,9c0,.14,0,3.64,0,8.9,0,2.61,0,5.66,0,8.94,0,2.87,0,5.91,0,9C360.25,375.93,360.25,393.25,360.25,393.25Z" transform="translate(-170.67 -286.5)"/>
+  <path class="cls-1" d="M215.75,393.25H180V287.75h35.75V306c-15.62,4.17,0,9,0,9V324s-14.12,4,0,9c0,.14,0,3.64,0,8.9,0,2.61,0,5.66,0,8.94,0,2.87,0,5.91,0,9C215.75,375.93,215.75,393.25,215.75,393.25Z" transform="translate(-170.67 -286.5)"/>
+  <polygon class="cls-2" points="189.58 168.5 45.58 168.75 0 100.5 234 100.5 189.58 168.5"/>
+  <path class="cls-3" d="M287.63,287,235.2,378.76a23.05,23.05,0,0,0,20,34.49h11.37l4-15.06,3.79,15.06,6.15.06L285.13,398l4.06,15.31,5.75-.06,4.25-16.12,4.56,16.13h12.14A25.45,25.45,0,0,0,338,375.17Z" transform="translate(-170.67 -286.5)"/>
+  <polygon class="cls-4" points="116.96 0 110.92 11.25 123 11.25 116.96 0"/>
+  <polygon class="cls-5" points="126.42 17.08 107.79 16.94 110.88 11.19 123.04 11.19 126.42 17.08"/>
+  <polygon class="cls-6" points="129.9 23.13 104.05 23.21 107.65 16.94 126.38 16.98 129.9 23.13"/>
+  <ellipse class="cls-1" cx="75.67" cy="102.75" rx="14.83" ry="23.42"/>
+  <ellipse class="cls-7" cx="156.67" cy="103.42" rx="14.83" ry="23.42"/>
+  <ellipse class="cls-8" cx="82.31" cy="89.92" rx="2.35" ry="3.71"/>
+  <ellipse class="cls-8" cx="162.68" cy="90.42" rx="2.35" ry="3.71"/>
+  <rect class="cls-8" x="23.33" y="1" width="5" height="99.13"/>
+  <rect class="cls-8" x="205.08" y="1" width="5" height="98.88"/>
+  <polygon class="cls-9" points="117.33 261.83 45.33 168.5 189.33 168.5 117.33 261.83"/>
+</svg>
