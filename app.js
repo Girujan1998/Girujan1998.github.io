@@ -2,7 +2,7 @@
 
   var firebaseConfig = {
     apiKey: "AIzaSyCWCA2KSAZ-lAXAggKpg-hsMuNlA6CyN60",
-    authDomain: "pencilproject-b9ef8.firebaseapp.com",
+    authDomain: "https://girujan1998.github.io/",
     databaseURL: "https://pencilproject-b9ef8.firebaseio.com",
     projectId: "pencilproject-b9ef8",
     storageBucket: "pencilproject-b9ef8.appspot.com",
