@@ -9,7 +9,7 @@ jobs:
     concurrency: ci-${{github.ref}}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Configure Node
         uses: actions/setup-node@v1
@@ -17,15 +17,10 @@ jobs:
           node-version: '18.16.0'
 
       - name: Install
-        run: |
-          npm install
-          git config user.email "${{ secrets.EMAIL }}"
-          git config user.name "${{ secrets.USERNAME }}"
-          git config --global url.https://${{ secrets.GITHUB_TOKEN }}@github.com/.insteadOf https://github.com/
-          npm run build
+        run: npm install
 
-      - name: Deploy
-        run: npm run deploy
+      - name: Build and Deploy React app to Github Pages
+        run: omkartapale/react-deployment-gh-pages@v1.0.0
 
       
 
