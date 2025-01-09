@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Build and Deploy React app to Github Pages
-        run: omkartapale/react-deployment-gh-pages@v1.0.0
+        uses: omkartapale/react-deployment-gh-pages@v1.0.0
 
       
 
