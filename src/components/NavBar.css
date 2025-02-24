@@ -24,14 +24,14 @@
     display: flex;
     margin: 0;
     padding: 0;
-  }
-  
-  .navbar-right .nav-links li {
+    font-size: 0.9rem;
+}
+
+.navbar-right .nav-links li {
     margin-right: 1rem;
-  }
-  
-  .navbar-right .nav-links a {
+}
+
+.navbar-right .nav-links a {
     color: #fff;
     text-decoration: none;
-  }
-  
+}
