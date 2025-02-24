@@ -36,3 +36,130 @@
     transform: rotate(360deg);
   }
 }
+
+/* This is for the home section */
+.home-section {
+  color: #fff;
+  background: linear-gradient(0deg, rgba(225,236,240,1) 10%, rgba(34,193,195,1) 100%);  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-name {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 2.7rem;
+  max-width: 75vw;
+  line-height: 3.5rem;
+}
+
+.intro-mini-summary {
+  color: #55565B;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  max-width: 80vw;
+}
+
+.section-header {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  left: 37vw;
+  display: inline-block;
+  height: 1em;
+  width: 4rem;
+  border-bottom: 5px solid;
+  border-radius: 3px;
+  margin-top: 1rem;
+  color: #22c1c3
+}
+
+.about-section {
+  color: black;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-info {
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-info h2 {
+  margin-top: 4rem;
+}
+
+.about-me-info h3 {
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.about-me-info h4 {
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.about-me-info p {
+  text-align: left;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+}
+
+.about-me-info p a{
+  color: #22c1c3;
+  font-weight: 600;
+}
+
+.about-me-info p span{
+  color: #22c1c3;
+  font-weight: 600;
+}
+
+.past-employment {
+  color: black;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.skill-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+}
+
+.skill-blocks span {
+  padding: 0.7rem 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #D3D3D3;
+  font-size: 0.8rem;
+}
