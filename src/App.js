@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
 
-      <section className='home-section'>
+      <section id="home" className='home-section'>
         <div className='intro'>
           <div className='intro-name'>
             HEY, THIS IS GIRUJAN NAGULESWARAN
