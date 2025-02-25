@@ -63,6 +63,12 @@
   line-height: 3.5rem;
 }
 
+@media (max-width: 480px) {
+  .intro-name {
+    font-size: 2rem;
+  }
+}
+
 .intro-mini-summary {
   color: #55565B;
   font-family: "Lato", sans-serif;
@@ -73,26 +79,27 @@
   max-width: 80vw;
 }
 
+@media (min-width: 775px) {
+  .intro-mini-summary  {
+    max-width: 50vw;
+  }
+}
+
 .section-header {
   color: black;
   font-family: "Lato", sans-serif;
   font-size: 2rem;
-  display: inline-block;
-  position: relative;
+  border-left: 5px solid #22c1c3;
+  border-radius: 3px;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
 }
 
-.section-header::after {
-  content: '';
-  position: absolute;
-  left: 37vw;
-  display: inline-block;
-  height: 1em;
-  width: 4rem;
-  border-bottom: 5px solid;
-  border-radius: 3px;
-  margin-top: 1rem;
-  color: #22c1c3
-}
+/* ---------------- */
+/* About Me Section */
+/* ---------------- */
 
 .about-section {
   color: black;
@@ -100,6 +107,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .about-me-info {
@@ -110,6 +118,7 @@
 
 .about-me-info h2 {
   margin-top: 4rem;
+  margin-left: 1rem;
 }
 
 .about-me-info h3 {
@@ -140,15 +149,6 @@
   font-weight: 600;
 }
 
-.past-employment {
-  color: black;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
-}
-
 .skill-blocks {
   display: flex;
   flex-wrap: wrap;
@@ -159,7 +159,216 @@
   padding: 0.7rem 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #D3D3D3;
   font-size: 0.8rem;
+}
+
+/* ------------------ */
+/* Employment Section */
+/* ------------------ */
+
+.past-employment-section {
+  color: black;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #FAFAFA;
+}
+
+.past-employment-info {
+  max-width: 80vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.past-employment-info h2 {
+  margin-top: 4rem;
+}
+
+.past-employment-info h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0.1rem 0rem 0rem;
+}
+
+.past-employment-info h4 {
+  margin: 0.5rem 0rem 1rem 0rem;
+  color: #626361;
+  font-weight: 400;
+}
+
+.employment-cards-container {
+  margin-top: 1.5rem;
+}
+
+.employment-card {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.item-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-block span {
+  padding: 0.4rem 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  background-color: #D3D3D3;
+  font-size: 0.8rem;
+}
+
+/* ---------------- */
+/* Projects Section */
+/* ---------------- */
+
+.projects-section {
+  color: black;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.projects-container {
+  max-width: 80vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container p {
+  line-height: 1.5rem;
+}
+
+.projects-container h2{
+  margin-top: 4rem;
+}
+
+.projects-container h3 {
+  font-size: 1.5rem;
+}
+
+.resource-buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.resource-button {
+  background-color: #22c1c3;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.resource-button:hover {
+  background-color: #23ebee;
+  color: black;
+}
+
+.last-resource-button {
+  margin-right: 0rem;
+}
+
+.eye-guide-image {
+  object-fit: contain;
+  max-height: 50vh;
+  margin-top: 2rem;
+}
+
+/* ------------------ */
+/* Contact Me Section */
+/* ------------------ */
+
+.contact-me-section {
+  color: black;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  background-color: #FAFAFA;
+}
+
+.contact-me-container {
+  max-width: 80vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-me-container h2 {
+  margin-top: 4rem;
+}
+
+form {
+  margin-top: 2rem;
+  padding: 2rem 1.8rem 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.input-field label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+.field {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  background-color: #D3D3D3;
+}
+
+.field::placeholder {
+  color: #3B3B3B;
+}
+
+form button {
+  background-color: #22c1c3;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #23ebee;
+  color: black;
+}
+
+.message-box {
+  height: 10rem;
 }
