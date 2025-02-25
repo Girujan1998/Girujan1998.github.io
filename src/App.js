@@ -6,7 +6,7 @@ const logo = require('./assets/eye-guide-image.png');
 
 function App() {
 
-  const [result, setResult] = useState("");
+  const [, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -188,7 +188,7 @@ function App() {
       <section id="projects" className='projects-section'>
         <div className='projects-container'>
           <h2 className='section-header'>PROJECTS</h2>
-          <img className='eye-guide-image' src={logo}></img>
+          <img className='eye-guide-image' alt="Android phone screen with app homescreen" src={logo}></img>
           <h3>Eye Guide</h3>
           <p>
             Eye Guide is a Android application, which serves as indoor 
