@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
 
@@ -13,10 +14,29 @@ const NavBar = () => {
             <div className='navbar-right'>
                 <ul className='nav-links'>
                     <li>
-                        <a href='/'>Home</a>
+                        <Link activeClass="active" smooth spy to="home">
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <a href='/'>About</a>
+                        <Link activeClass="active" smooth spy to="about">
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" smooth spy to="experience">
+                            Experience
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" smooth spy to="projects">
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" smooth spy to="contact">
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </div>
