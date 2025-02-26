@@ -19,8 +19,9 @@
 }
 
 .burger-item:hover {
-    background-color: grey;
+    background-color: #22c1c3;
     color: white;
+    font-weight: 800;
 }
 
 .burger-link {
