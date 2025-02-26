@@ -2,6 +2,12 @@ import './App.css';
 import NavBar from './components/NavBar';
 import { useState } from 'react';
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+
+import { Link } from 'react-scroll';
+
 const logo = require('./assets/eye-guide-image.png');
 
 function App() {
@@ -47,6 +53,18 @@ function App() {
           <div className='intro-mini-summary'>
             I'm a Frontend and Fullstack Developer that enjoys creating
             interactive, responsive, and accessible web pages.
+          </div>
+          <div className='home-buttons-container'>
+            <div className='home-section-button'>
+              <Link activeClass="active" smooth spy to="projects">
+                Projects
+              </Link>
+            </div>
+            <div className='home-section-button'>
+              <Link activeClass="active" smooth spy to="contact">
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -230,12 +248,50 @@ function App() {
         </div>
       </section>
 
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Website under construction.
-        </p>
-      </header> */}
+      <footer className='footer'>
+        <div className='footer-contact-container'>
+          Girujan Naguleswaran
+          <div className='icons-container'>
+            <a href='https://github.com/Girujan1998'>
+              <FaGithub size={'1.5em'}/>
+            </a>
+            <a href='https://www.linkedin.com/in/girujan/'>
+              <FaLinkedin size={'1.5em'}/>
+            </a>
+            <a href='https://www.facebook.com/th3r3algman/'>
+              <FaFacebookF size={'1.5em'}/>
+            </a>
+          </div>
+        </div>
+        <div className='divider-line'></div>
+        <div className='footer-nav-container'>
+          <div className='link-item'>
+            <Link activeClass="active" smooth spy to="home">
+              Home
+            </Link>
+          </div>
+          <div className='link-item'>
+            <Link activeClass="active" smooth spy to="about">
+              About
+            </Link>
+          </div>
+          <div className='link-item'>
+            <Link activeClass="active" smooth spy to="experience">
+              Experience
+            </Link>
+          </div>
+          <div className='link-item'>
+            <Link activeClass="active" smooth spy to="projects">
+              Projects
+            </Link>
+          </div>
+          <div className='link-item'>
+            <Link activeClass="active" smooth spy to="contact">
+              Contact
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
