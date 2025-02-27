@@ -1,0 +1,18 @@
+.employment-card {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.item-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-block span {
+    padding: 0.4rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    background-color: #D3D3D3;
+    font-size: 0.8rem;
+}
