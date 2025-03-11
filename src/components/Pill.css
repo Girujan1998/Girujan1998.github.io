@@ -1,0 +1,25 @@
+.pill-container {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    background-color: #1ca7a9;
+    color: #caeded;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.6rem 0.5rem;
+    height: 15px;
+}
+
+@media (max-width: 450px) {
+    .pill-container {
+        margin: 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .pill-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.6rem 0.5rem;
+    }
+}
