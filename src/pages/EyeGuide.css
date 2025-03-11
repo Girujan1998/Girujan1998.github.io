@@ -1,0 +1,97 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+}
+
+.title-container h1 {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 3rem;
+}
+
+.title-container h3 {
+    color: #55565B;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title-container h4 {
+    color: #5a5a5a;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.skills-container h4 {
+    min-width: 200px;
+    justify-content: flex-end;
+    margin-top: 0.8rem;
+}
+
+.pills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 450px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .pills-container {
+        justify-content: center;
+    }
+
+    .skills-container h4 {
+        justify-content: center;
+    }
+}
+
+.project-overview-section {
+    color: black;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.project-overview-container {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.summary-container {
+    margin-top: 2rem;
+}
+
+.summary-container p {
+    line-height: 1.5rem;
+}
+
+.summary-container p span {
+    color: #22c1c3;
+    font-weight: 600;
+}
+
+.summary-container .resource-buttons-container {
+    align-content: flex-start;
+    justify-content: flex-start;
+}

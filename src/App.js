@@ -6,13 +6,15 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import EyeGuide from './pages/EyeGuide';
 
 function App() {
   return (
     <>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/eyeguide" element={<EyeGuide />} />
       </Routes>
       <Footer/>
     </>

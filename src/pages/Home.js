@@ -5,10 +5,18 @@ import { Link } from 'react-scroll';
 import SkillBlocks from '../components/SkillBlocks';
 import EmploymentCard from '../components/EmploymentCard';
 import ContactForm from '../components/ContactForm';
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const logo = require('../assets/eye-guide-image.png');
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const navigate = useNavigate();
 
     let routeChange = (path) => {
         window.open(path, "_blank")
@@ -183,7 +191,7 @@ const Home = () => {
                         <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide-backend")}>
                             Backend Repo
                         </button>
-                        <button className='resource-button last-resource-button'>
+                        <button className='resource-button last-resource-button' onClick={() => navigate("eyeguide")}>
                             More Info
                         </button>
                     </div>
