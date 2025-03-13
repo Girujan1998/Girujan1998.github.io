@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Pill from "../components/Pill";
 import "./EyeGuide.css";
+import { useNavigate } from "react-router-dom";
 
 const logo = require('../assets/eye-guide-image.png');
 
@@ -13,6 +14,8 @@ const EyeGuide = () => {
     let routeChange = (path) => {
         window.open(path, "_blank")
     }
+
+    const navigate = useNavigate();
 
     return (
         <div className="eyeguide">
@@ -46,7 +49,7 @@ const EyeGuide = () => {
                     <img className='eye-guide-image' alt="Android phone screen with app homescreen" src={logo}></img>
                     <div className="summary-container">
                         <p>
-                            This project is a indoor navigation Android application
+                            This project is an indoor navigation Android application
                             for the visually impaired. The Android application is
                             paired with a physical device that mounts onto the user's
                             phone.
@@ -84,6 +87,9 @@ const EyeGuide = () => {
                             </button>
                             <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide-backend")}>
                                 Backend Repo
+                            </button>
+                            <button className='back-button' onClick={() => navigate(-1)}>
+                                Go Back
                             </button>
                         </div>
                     </div>

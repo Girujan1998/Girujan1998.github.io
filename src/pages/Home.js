@@ -103,16 +103,16 @@ const Home = () => {
                         interactive, responsive, and accessible web pages.
                     </div>
                     <div className='home-buttons-container'>
-                        <div className='home-section-button'>
-                            <Link activeClass="active" smooth spy to="projects">
+                        <Link activeClass="active" smooth spy to="projects">
+                            <div className='home-section-button'>
                                 Projects
-                            </Link>
-                        </div>
-                        <div className='home-section-button'>
-                            <Link activeClass="active" smooth spy to="contact">
+                            </div>
+                        </Link>
+                        <Link activeClass="active" smooth spy to="contact">
+                            <div className='home-section-button'>
                                 Contact
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -127,15 +127,15 @@ const Home = () => {
                         I'm a <span>Frontend and Fullstack Developer</span>, with experience working
                         on frontend facing websites and backend architecture.
                         I graduated from the <span>University of Waterloo</span> with a <span>Bachelor's Degree
-                            in Computer Engineering.</span>
+                        in Computer Engineering.</span>
                     </p>
                     <p>
-                        I am interested in career oppurtunities in <span>Web Development</span> where I have the
+                        I am interested in career opportunities in <span>Web Development</span> where I have the
                         oppurtuniy to contibute the knowledge I have garnered over
                         the years and learn new skills.
                     </p>
                     <p>
-                        If you have a oppurtunity that I would be a good fit for me, feel
+                        If you have a oppurtunity that matches my skill set, feel
                         free to contact me. If you would like to contact me, you can
                         Connect and Message me on <a href="https://www.linkedin.com/in/girujan/">LinkedIn</a>.
                         Additionally, if you would like to view my past and current
@@ -164,7 +164,7 @@ const Home = () => {
                         {
                             experiences.map((experience) => {
                                 return (
-                                    <EmploymentCard experience={experience} />
+                                    <EmploymentCard key={experience.company} experience={experience} />
                                 )
                             })
                         }

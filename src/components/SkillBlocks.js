@@ -6,7 +6,7 @@ const SkillBlocks = ({ skills }) => {
             {
                 skills.map((skill) => {
                     return (
-                        <span>{skill}</span>
+                        <span key={skill}>{skill}</span>
                     )
                 })
             }

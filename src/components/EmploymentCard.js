@@ -11,7 +11,7 @@ const EmploymentCard = ({ experience }) => {
                     {
                         experience.skills.map((skill) => {
                             return (
-                                <span>{skill}</span>
+                                <span key={skill}>{skill}</span>
                             )
                         })
                     }
