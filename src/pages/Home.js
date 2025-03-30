@@ -177,23 +177,29 @@ const Home = () => {
             <section id="projects" className='projects-section'>
                 <div className='projects-container'>
                     <h2 className='section-header'>PROJECTS</h2>
-                    <img className='eye-guide-image' alt="Android phone screen with app homescreen" src={logo}></img>
-                    <h3>Eye Guide</h3>
-                    <p>
-                        Eye Guide is a Android application, which serves as indoor
-                        navigation for the visually impaired. It was developed in
-                        React Native with JavaScript and in Django with Python.
-                    </p>
-                    <div className='resource-buttons-container'>
-                        <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide")}>
-                            Frontend Repo
-                        </button>
-                        <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide-backend")}>
-                            Backend Repo
-                        </button>
-                        <button className='resource-button last-resource-button' onClick={() => navigate("eyeguide")}>
-                            More Info
-                        </button>
+                    <div className="project-container">
+                        <div className="project-image-container">
+                            <img className='eye-guide-image' alt="Android phone screen with app homescreen" src={logo}></img>
+                        </div>
+                        <div className="project-content-container">
+                            <h3>Eye Guide</h3>
+                            <p>
+                                Eye Guide is a Android application, which serves as indoor
+                                navigation for the visually impaired. It was developed in
+                                React Native with JavaScript and in Django with Python.
+                            </p>
+                            <div className='resource-buttons-container'>
+                                <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide")}>
+                                    Frontend Repo
+                                </button>
+                                <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide-backend")}>
+                                    Backend Repo
+                                </button>
+                                <button className='resource-button last-resource-button' onClick={() => navigate("eyeguide")}>
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
