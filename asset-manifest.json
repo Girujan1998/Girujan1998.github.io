@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.756c2006.css",
+    "main.js": "/static/js/main.7a25f38f.js",
+    "static/media/eye-guide-image.png": "/static/media/eye-guide-image.19fbf8f3e60767597fe5.png",
+    "index.html": "/index.html",
+    "main.756c2006.css.map": "/static/css/main.756c2006.css.map",
+    "main.7a25f38f.js.map": "/static/js/main.7a25f38f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.756c2006.css",
+    "static/js/main.7a25f38f.js"
+  ]
+}
