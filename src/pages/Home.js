@@ -195,7 +195,7 @@ const Home = () => {
                                 <button className='resource-button' onClick={() => routeChange("https://github.com/Girujan1998/EyeGuide-backend")}>
                                     Backend Repo
                                 </button>
-                                <button className='resource-button last-resource-button' onClick={() => navigate("eyeguide")}>
+                                <button className='resource-button' onClick={() => navigate("eyeguide")}>
                                     More Info
                                 </button>
                             </div>
