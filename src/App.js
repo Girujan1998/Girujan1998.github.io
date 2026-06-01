@@ -1,4 +1,6 @@
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './sections/Home';
@@ -19,6 +21,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ToastContainer position="bottom-right" theme="dark" />
     </div>
   );
 }

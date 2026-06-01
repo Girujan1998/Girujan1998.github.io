@@ -2,48 +2,128 @@ import './Experience.css';
 
 const EXPERIENCE = [
   {
-    role: 'Senior Software Engineer',
-    company: 'TechCorp Inc.',
-    period: 'Jan 2022 — Present',
-    type: 'Full-time',
-    description:
-      'Leading development of a distributed microservices platform serving millions of users. Architecting core infrastructure, driving reliability to 99.9% uptime, and mentoring a team of five engineers.',
+    role: 'Full Stack Developer',
+    company: 'Arctic Wolf',
+    period: 'Sep 2022 — Dec 2022',
+    type: 'Co-op',
+    location: 'Kitchener, Ontario, Canada',
     highlights: [
-      'Redesigned event-driven pipeline, reducing end-to-end latency by 40%',
-      'Led migration from monolith to microservices architecture across 8 services',
-      'Introduced automated testing practices, lifting coverage from 20% to 85%',
-      'Collaborated with product and design to ship three major features per quarter',
+      'Updated API calls in Go to remove usage of deprecated fields from the Postgres database',
+      'Modified SQL queries to retrieve data with filters based on senior leadership\'s specifications',
+      'Developed a React UI for an internal tool to manage team and individual employee online training completion statistics',
     ],
-    stack: ['TypeScript', 'Node.js', 'React', 'PostgreSQL', 'Kafka', 'AWS', 'Docker'],
+    stack: ['React', 'Go', 'PostgreSQL', 'SQL'],
   },
   {
-    role: 'Software Engineer',
-    company: 'StartupXYZ',
-    period: 'Jun 2020 — Dec 2021',
-    type: 'Full-time',
-    description:
-      'Full-stack engineer on a B2B SaaS product. Built customer-facing features, internal tooling, and third-party integrations in a fast-paced agile environment.',
+    role: 'Software Developer',
+    company: 'D2L',
+    period: 'Jan 2022 — Apr 2022',
+    type: 'Co-op',
+    location: 'Kitchener, Ontario, Canada',
     highlights: [
-      'Built end-to-end billing and subscription system integrating Stripe',
-      'Reduced page load times by 60% through code splitting and caching strategies',
-      'Shipped admin dashboard now used by 200+ enterprise clients',
-      'Integrated OAuth providers and SendGrid for transactional email',
+      'Developed features for the new evaluation experience release using JavaScript and the LitElement library',
+      'Diagnosed and resolved UI and API defects in C#, JavaScript, and the Hypermedia API',
+      'Provided extensive code reviews regarding architecture, design, and developing flexible code',
     ],
-    stack: ['JavaScript', 'React', 'Python', 'Django', 'MySQL', 'Redis'],
+    stack: ['JavaScript', 'LitElement', 'C#', 'Hypermedia API', 'CSS'],
   },
   {
-    role: 'Junior Developer',
-    company: 'DevAgency',
-    period: 'Sep 2019 — May 2020',
-    type: 'Full-time',
-    description:
-      'Developed client websites and custom web applications for small-to-medium businesses. Collaborated closely with designers and project managers to deliver on time.',
+    role: 'Full Stack Developer',
+    company: 'DOZR',
+    period: 'Jan 2021 — May 2021',
+    type: 'Co-op',
+    location: 'Waterloo, Ontario, Canada',
     highlights: [
-      'Built and launched six client websites using React and WordPress',
-      'Developed custom CMS integrations for e-commerce clients',
-      'Participated in code reviews and contributed to team coding standards',
+      'Spearheaded migration of architecture from React to Next.js and TypeScript',
+      'Researched, developed, integrated, and implemented a headless CMS into existing and new code infrastructure',
+      'Developed 404, blog, and search pages using JavaScript, HTML5, CSS3, and API calls, ensuring page responsiveness and low latency',
+      'Debugged and resolved over 50 bugs to ensure release of new webpage design',
+      'Effectively communicated information between the engineering and marketing teams',
     ],
-    stack: ['JavaScript', 'React', 'PHP', 'WordPress', 'HTML & CSS'],
+    stack: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+  },
+  {
+    role: 'Web Developer',
+    company: 'Soneil Electronics',
+    period: 'Jun 2020 — Sep 2020',
+    type: 'Co-op',
+    location: 'Brampton, Ontario, Canada',
+    highlights: [
+      'Developed responsive webpages for customer usage using HTML5, CSS3, and JavaScript',
+      'Consistently tested UI and functionality to ensure multi-screen size compatibility and a smooth user experience',
+      'Documented website components to assist end users in navigating the webpages',
+    ],
+    stack: ['JavaScript', 'HTML5', 'CSS3'],
+  },
+  {
+    role: 'Software Test Automation Developer',
+    company: 'Senstar',
+    period: 'Sep 2019 — Dec 2019',
+    type: 'Co-op',
+    location: 'Waterloo, Ontario, Canada',
+    highlights: [
+      'Used OOP to develop a new automation structure for Windows applications with C# and .NET Framework',
+      'Implemented Dapper framework to manipulate SQL databases using C#',
+      'Set up Jenkins jobs for nightly automation and reviewed failed builds',
+      'Worked within an Agile development cycle',
+      'Debugged and resolved multiple build issues related to SDKs, NuGet packages, and DLLs',
+    ],
+    stack: ['C#', '.NET Framework', 'Dapper', 'SQL', 'Jenkins'],
+  },
+  {
+    role: 'QA Automation Engineer',
+    company: 'SAP',
+    period: 'Jan 2019 — Apr 2019',
+    type: 'Co-op',
+    location: 'Waterloo, Ontario, Canada',
+    highlights: [
+      'Designed and implemented a nightly automated testing project using SQL, Python, and Batch to auto-run tests after hours',
+      'Provided frequent and thorough code reviews for other team members',
+      'Supervised co-ops and assisted them with debugging issues in Python',
+      'Efficiently managed time to consistently complete multiple tasks and assist co-ops',
+    ],
+    stack: ['Python', 'SQL', 'Batch'],
+  },
+  {
+    role: 'Content Developer',
+    company: 'Chartwell Retirement Residences',
+    period: 'May 2018 — Aug 2018',
+    type: 'Contract',
+    location: 'Mississauga, Ontario, Canada',
+    highlights: [
+      'Created multiple content documents for more than 120 properties',
+      'Created and uploaded more than 120 YouTube videos marketing different residence properties',
+      'Developed a Batch script to rename over 2000 images to specified names, reducing manual work by more than half',
+      'Analyzed web pages for all properties and reported defects and enhancements',
+    ],
+    stack: ['Batch', 'Content Development'],
+  },
+  {
+    role: 'QA Automation Engineer',
+    company: 'SAP',
+    period: 'Jan 2018 — Apr 2018',
+    type: 'Co-op',
+    location: 'Waterloo, Ontario, Canada',
+    highlights: [
+      'Designed and developed automated test cases using PyCharm to verify UI and functionalities of specific regions',
+      'Created detailed test cases and actively tested multiple versions of SAP HANA HRTT',
+      'Communicated effectively with managers and developers to ensure productivity',
+    ],
+    stack: ['Python', 'PyCharm', 'SAP HANA'],
+  },
+  {
+    role: 'QA Analyst',
+    company: 'Climax Media Inc',
+    period: 'Jan 2017 — Apr 2017',
+    type: 'Co-op',
+    location: 'Toronto, Ontario, Canada',
+    highlights: [
+      'Managed time effectively to ensure completion of multiple projects with strict deadlines',
+      'Communicated with developers and team leads to ensure correct testing requirements',
+      'Developed detailed test specs to be implemented with automation',
+      'Created detailed error reports within GitHub covering web page layout, database, and code',
+    ],
+    stack: ['GitHub', 'Software Testing'],
   },
 ];
 
@@ -75,11 +155,9 @@ function Experience() {
                   </div>
                   <div className="exp-meta">
                     <span className="exp-period">{job.period}</span>
-                    <span className="tag exp-type">{job.type}</span>
+                    <span className="exp-location">{job.location}</span>
                   </div>
                 </div>
-
-                <p className="exp-description">{job.description}</p>
 
                 <ul className="exp-highlights">
                   {job.highlights.map((point, i) => (

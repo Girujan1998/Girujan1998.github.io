@@ -104,11 +104,11 @@
   font-size: 11px;
 }
 
-.exp-description {
-  color: var(--text-muted);
-  font-size: 14.5px;
-  line-height: 1.75;
-  margin-bottom: 16px;
+.exp-location {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-subtle);
+  white-space: nowrap;
 }
 
 .exp-highlights {

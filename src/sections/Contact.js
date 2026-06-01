@@ -1,17 +1,39 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import './Contact.css';
 
 function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: wire up form submission (e.g. EmailJS, Formspree, or a backend endpoint)
-    alert('Thanks for your message! (form submission not yet wired up)');
+    setSubmitting(true);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: 'f0f6cea6-3cbf-41a5-a454-141e8f4e102e',
+          ...form,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success("Message sent! I'll get back to you soon.");
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        toast.error('Something went wrong. Please try again.');
+      }
+    } catch {
+      toast.error('Network error. Please check your connection and try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -36,12 +58,8 @@ function Contact() {
 
             <dl className="contact-details">
               <div className="contact-detail">
-                <dt>Email</dt>
-                <dd>hello@girujan.dev</dd>
-              </div>
-              <div className="contact-detail">
                 <dt>Location</dt>
-                <dd>[City, Country]</dd>
+                <dd>Ontario, Canada</dd>
               </div>
               <div className="contact-detail">
                 <dt>Availability</dt>
@@ -50,9 +68,8 @@ function Contact() {
             </dl>
 
             <div className="contact-socials">
-              <a href="#" className="social-btn" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="#" className="social-btn" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="#" className="social-btn" target="_blank" rel="noreferrer">Twitter</a>
+              <a href="https://github.com/Girujan1998" className="social-btn" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/girujan/" className="social-btn" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </div>
 
@@ -101,8 +118,8 @@ function Contact() {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary form-submit">
-              Send Message
+            <button type="submit" className="btn btn-primary form-submit" disabled={submitting}>
+              {submitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         </div>
