@@ -1,24 +1,15 @@
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
-import EyeGuide from './pages/EyeGuide';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <NavBar/>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/eyeguide" element={<EyeGuide />} />
-      </Routes>
-      <Footer/>
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+      </header>
+    </div>
+  );
 }
 
 export default App;
