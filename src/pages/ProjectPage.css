@@ -105,6 +105,9 @@
   font-weight: 600;
   color: var(--text);
   margin-bottom: 20px;
+}
+
+.pp-section-title.with-divider {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }

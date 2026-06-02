@@ -70,7 +70,7 @@ function ProjectPage() {
           </section>
 
           <section className="pp-section">
-            <h2 className="pp-section-title">Key Features</h2>
+            <h2 className="pp-section-title with-divider">Key Features</h2>
             <ul className="pp-features">
               {project.features.map((f, i) => (
                 <li key={i}>
