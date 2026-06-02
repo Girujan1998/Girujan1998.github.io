@@ -4,7 +4,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -16,6 +16,7 @@
   padding: 26px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -78,6 +79,19 @@
   flex-wrap: wrap;
   gap: 6px;
   margin-top: auto;
+  margin-bottom: 16px;
+}
+
+.project-cta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  transition: letter-spacing 0.2s ease;
+}
+
+.project-card:hover .project-cta {
+  letter-spacing: 0.08em;
 }
 
 /* ── Responsive ── */

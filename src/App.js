@@ -1,6 +1,7 @@
-import './App.css';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './sections/Home';
@@ -8,10 +9,11 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+import ProjectPage from './pages/ProjectPage';
 
-function App() {
+function Portfolio() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <main>
         <Home />
@@ -22,7 +24,20 @@ function App() {
       </main>
       <Footer />
       <ToastContainer position="bottom-right" theme="dark" />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/projects/:slug" element={<ProjectPage />} />
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 

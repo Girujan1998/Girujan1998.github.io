@@ -82,7 +82,7 @@ const EXPERIENCE = [
       'Supervised co-ops and assisted them with debugging issues in Python',
       'Efficiently managed time to consistently complete multiple tasks and assist co-ops',
     ],
-    stack: ['Python', 'SQL', 'Batch'],
+    stack: ['Python', 'SQL', 'PyCharm', 'Batch'],
   },
   {
     role: 'Content Developer',
@@ -109,7 +109,7 @@ const EXPERIENCE = [
       'Created detailed test cases and actively tested multiple versions of SAP HANA HRTT',
       'Communicated effectively with managers and developers to ensure productivity',
     ],
-    stack: ['Python', 'PyCharm', 'SAP HANA'],
+    stack: ['Python', 'SQL', 'PyCharm'],
   },
   {
     role: 'QA Analyst',

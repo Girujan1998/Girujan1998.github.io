@@ -1,55 +1,6 @@
+import { useNavigate } from 'react-router-dom';
+import { PROJECTS } from '../data/projects';
 import './Projects.css';
-
-const PROJECTS = [
-  {
-    name: 'DevConnect',
-    description:
-      'A professional networking platform for developers. Features real-time chat, project collaboration rooms, and a global code-snippet feed.',
-    stack: ['React', 'Node.js', 'Socket.io', 'PostgreSQL', 'Redis'],
-    github: '#',
-    live: '#',
-  },
-  {
-    name: 'CodeFlow',
-    description:
-      'Visual code review tool that makes PR reviews faster and more intuitive, with inline comments, diff visualization, and team workflows.',
-    stack: ['TypeScript', 'React', 'GraphQL', 'MongoDB'],
-    github: '#',
-    live: '#',
-  },
-  {
-    name: 'ByteStream',
-    description:
-      'High-throughput real-time data pipeline capable of processing millions of events per second, built for financial data streaming use cases.',
-    stack: ['Go', 'Kafka', 'ClickHouse', 'Docker', 'Kubernetes'],
-    github: '#',
-    live: null,
-  },
-  {
-    name: 'CloudDash',
-    description:
-      'Infrastructure monitoring dashboard that aggregates metrics from multiple cloud providers into a single unified view with alert support.',
-    stack: ['Python', 'FastAPI', 'React', 'AWS', 'Prometheus'],
-    github: '#',
-    live: '#',
-  },
-  {
-    name: 'QueryMind',
-    description:
-      'AI-powered SQL assistant that converts natural language questions into optimized database queries with full schema awareness.',
-    stack: ['Python', 'OpenAI API', 'PostgreSQL', 'Next.js'],
-    github: '#',
-    live: '#',
-  },
-  {
-    name: 'SecureVault',
-    description:
-      'Zero-knowledge password manager with end-to-end encryption. All data is encrypted client-side before reaching the server.',
-    stack: ['TypeScript', 'React Native', 'Node.js', 'Web Crypto API'],
-    github: '#',
-    live: null,
-  },
-];
 
 function IconCode() {
   return (
@@ -68,17 +19,9 @@ function IconGitHub() {
   );
 }
 
-function IconExternal() {
-  return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-      <polyline points="15 3 21 3 21 9" />
-      <line x1="10" y1="14" x2="21" y2="3" />
-    </svg>
-  );
-}
-
 function Projects() {
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="projects section">
       <div className="container">
@@ -92,29 +35,38 @@ function Projects() {
 
         <div className="projects-grid">
           {PROJECTS.map((project) => (
-            <div key={project.name} className="project-card">
+            <div
+              key={project.slug}
+              className="project-card"
+              onClick={() => navigate(`/projects/${project.slug}`)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && navigate(`/projects/${project.slug}`)}
+            >
               <div className="project-card-top">
                 <span className="project-icon"><IconCode /></span>
-                <div className="project-links">
-                  <a href={project.github} className="proj-link" title="View on GitHub" target="_blank" rel="noreferrer">
-                    <IconGitHub />
-                  </a>
-                  {project.live && (
-                    <a href={project.live} className="proj-link" title="Live demo" target="_blank" rel="noreferrer">
-                      <IconExternal />
-                    </a>
-                  )}
-                </div>
+                <a
+                  href={project.github}
+                  className="proj-link"
+                  title="View on GitHub"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IconGitHub />
+                </a>
               </div>
 
               <h3 className="project-name">{project.name}</h3>
-              <p className="project-description">{project.description}</p>
+              <p className="project-description">{project.overview[0]}</p>
 
               <div className="project-stack">
                 {project.stack.map((tech) => (
                   <span key={tech} className="tag">{tech}</span>
                 ))}
               </div>
+
+              <span className="project-cta">View details →</span>
             </div>
           ))}
         </div>

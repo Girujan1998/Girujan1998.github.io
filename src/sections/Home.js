@@ -52,7 +52,7 @@ function Home() {
             <div className="t-output">
               <p><span className="t-key">Name</span><span className="t-sep">:</span> Girujan Naguleswaran</p>
               <p><span className="t-key">Role</span><span className="t-sep">:</span> Software Engineer</p>
-              <p><span className="t-key">Location</span><span className="t-sep">:</span> [City, Country]</p>
+              <p><span className="t-key">Location</span><span className="t-sep">:</span> Ontario, Canada</p>
               <p><span className="t-key">Focus</span><span className="t-sep">:</span> Full Stack Development</p>
               <p><span className="t-key">Status</span><span className="t-sep">:</span> <span className="t-green">Available</span></p>
             </div>
@@ -67,9 +67,9 @@ function Home() {
               <span>React</span>
               <span>Node.js</span>
               <span>Go</span>
-              <span>AWS</span>
               <span>Docker</span>
               <span>PostgreSQL</span>
+              <span>Claude</span>
             </div>
             <div className="t-line">
               <span className="t-prompt">❯</span>
