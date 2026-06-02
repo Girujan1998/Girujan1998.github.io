@@ -1,58 +1,41 @@
-import "./Footer.css";
+import './Footer.css';
 
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+const NAV_ITEMS = [
+  { label: 'Home', id: 'home' },
+  { label: 'About', id: 'about' },
+  { label: 'Experience', id: 'experience' },
+  { label: 'Projects', id: 'projects' },
+  { label: 'Contact', id: 'contact' },
+];
 
-import { Link } from 'react-scroll';
+function scrollToSection(id) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+}
 
-const Footer = () => {
-    return (
-        <footer className='footer'>
-            <div className='footer-contact-container'>
-                Girujan Naguleswaran
-                <div className='icons-container'>
-                    <a href='https://github.com/Girujan1998'>
-                        <FaGithub size={'1.5em'} />
-                    </a>
-                    <a href='https://www.linkedin.com/in/girujan/'>
-                        <FaLinkedin size={'1.5em'} />
-                    </a>
-                    <a href='https://www.facebook.com/th3r3algman/'>
-                        <FaFacebookF size={'1.5em'} />
-                    </a>
-                </div>
-            </div>
-            <div className='divider-line'></div>
-            <div className='footer-nav-container'>
-                <div className='link-item'>
-                    <Link activeClass="active" smooth spy to="home">
-                        Home
-                    </Link>
-                </div>
-                <div className='link-item'>
-                    <Link activeClass="active" smooth spy to="about">
-                        About
-                    </Link>
-                </div>
-                <div className='link-item'>
-                    <Link activeClass="active" smooth spy to="experience">
-                        Experience
-                    </Link>
-                </div>
-                <div className='link-item'>
-                    <Link activeClass="active" smooth spy to="projects">
-                        Projects
-                    </Link>
-                </div>
-                <div className='link-item'>
-                    <Link activeClass="active" smooth spy to="contact">
-                        Contact
-                    </Link>
-                </div>
-            </div>
-        </footer>
-    )
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-inner">
+        <button className="footer-logo" onClick={() => scrollToSection('home')}>
+          <span className="logo-bracket">&lt;</span>
+          <span className="logo-text">GN</span>
+          <span className="logo-bracket">&nbsp;/&gt;</span>
+        </button>
+
+        <nav className="footer-nav" aria-label="Footer navigation">
+          {NAV_ITEMS.map(({ label, id }) => (
+            <button key={id} className="footer-link" onClick={() => scrollToSection(id)}>
+              {label}
+            </button>
+          ))}
+        </nav>
+
+        <p className="footer-copy">
+          © {new Date().getFullYear()} Girujan Naguleswaran. Built with React.
+        </p>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
