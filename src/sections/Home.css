@@ -100,6 +100,31 @@
   color: var(--text-subtle);
 }
 
+.home-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: rgba(88, 166, 255, 0.06);
+}
+
 /* ── Right: terminal ── */
 .home-terminal {
   border-radius: var(--radius-lg);
@@ -188,6 +213,26 @@
 
 .t-skills span:last-child::after {
   content: '';
+}
+
+.t-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.t-links a {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.t-links a:hover {
+  color: var(--accent);
 }
 
 .t-cursor {
