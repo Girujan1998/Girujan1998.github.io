@@ -1,15 +1,31 @@
 {
+  "name": "Girujan Naguleswaran — Portfolio",
   "short_name": "Girujan N",
-  "name": "Girujan Naguleswaran",
+  "description": "Portfolio of Girujan Naguleswaran, Software Engineer & Full Stack Developer based in Ontario, Canada.",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#010409",
+  "background_color": "#010409"
 }
