@@ -132,7 +132,7 @@ function Experience() {
     <section id="experience" className="experience section">
       <div className="container">
         <div className="section-header">
-          <span className="section-number">// 02</span>
+          <span className="section-number">{"//"} 02</span>
           <h2 className="section-title">Experience</h2>
           <p className="section-subtitle">My professional journey so far.</p>
         </div>

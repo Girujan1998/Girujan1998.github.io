@@ -40,7 +40,7 @@ function Contact() {
     <section id="contact" className="contact section">
       <div className="container">
         <div className="section-header">
-          <span className="section-number">// 04</span>
+          <span className="section-number">{"//"} 04</span>
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
             Have a project in mind, an opportunity to share, or just want to say hello?
