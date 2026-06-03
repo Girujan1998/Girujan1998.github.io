@@ -14,7 +14,7 @@ function About() {
     <section id="about" className="about section">
       <div className="container">
         <div className="section-header">
-          <span className="section-number">// 01</span>
+          <span className="section-number">{"//"} 01</span>
           <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">A bit about who I am, what I build, and where I'm headed.</p>
         </div>
@@ -70,7 +70,7 @@ function About() {
           </div>
 
           <div className="about-skills">
-            <p className="skills-heading">// Skills &amp; Technologies</p>
+            <p className="skills-heading">{"//"} Skills &amp; Technologies</p>
             <div className="skills-list">
               {SKILLS.map(({ category, items }) => (
                 <div key={category} className="skill-row">

@@ -26,7 +26,7 @@ function Projects() {
     <section id="projects" className="projects section">
       <div className="container">
         <div className="section-header">
-          <span className="section-number">// 03</span>
+          <span className="section-number">{"//"} 03</span>
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
             A selection of things I've built — from production systems to side projects.
