@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../data/projects';
+import ScreenshotCarousel from '../components/ScreenshotCarousel';
 import './ProjectPage.css';
 
 function IconGitHub() {
@@ -38,7 +39,7 @@ function ProjectPage() {
     <div className="pp-wrapper">
       <header className="pp-topbar">
         <div className="pp-topbar-inner">
-          <button className="pp-back" onClick={() => navigate('/')}>
+          <button className="pp-back" onClick={() => navigate('/', { state: { scrollTo: 'projects' } })}>
             <IconArrowLeft />
             <span>Back to Portfolio</span>
           </button>
@@ -68,6 +69,16 @@ function ProjectPage() {
               <p key={i} className="pp-body">{para}</p>
             ))}
           </section>
+
+          {project.screenshots && project.screenshots.length > 0 && (
+            <section className="pp-section">
+              <h2 className="pp-section-title with-divider">Screenshots</h2>
+              <p className="pp-body pp-screens-note">
+                Populated with placeholder data for illustration.
+              </p>
+              <ScreenshotCarousel screenshots={project.screenshots} />
+            </section>
+          )}
 
           <section className="pp-section">
             <h2 className="pp-section-title with-divider">Key Features</h2>

@@ -1,4 +1,66 @@
+import gasSearchImg from '../assets/gas-search.png';
+import evSearchImg from '../assets/ev-search.png';
+import aiAgentImg from '../assets/ai-agent.png';
+import priceForecastImg from '../assets/price-forecast.png';
+import favoritesImg from '../assets/favorites.png';
+
 export const PROJECTS = [
+  {
+    slug: 'gasagent-frontend',
+    name: 'GasAgent.ai — Frontend',
+    tagline: 'Cross-platform mobile app for finding fuel and charging',
+    overview: [
+      'GasAgent.ai is a cross-platform React Native app (iOS and Android) that helps drivers find fuel and charging options, track prices, and get short-term price forecasts — with a built-in AI agent that plans and executes multi-step lookups on its own rather than answering from a script.',
+      'The mobile client is written in TypeScript and consumes a Python (FastAPI) backend. Search results — gas stations, EV chargers, and forecasts — render as rich cards that are reused across the dedicated search tabs and inline in the AI agent chat. Location shared once carries across every tab instead of being re-requested.',
+      'This is a personal portfolio and learning project, built to practice full-stack mobile development: a React Native client, a Python API backend, third-party data integration, and an AI agent with tool-calling. It runs on free-tier hosting and public data sources and is not intended for production use.',
+    ],
+    features: [
+      'Gas station search by city, postal code, or current location, with brand, per-grade pricing, distance, and ratings',
+      'EV charging station search with network, connector types, and charging speed',
+      'Conversational AI agent that chains multiple lookups to answer a single goal',
+      'Short-term local gas price forecasting',
+      'Favorites: save stations from results, reorder them, and refresh prices later',
+      'Shared location state across all tabs — share once, use everywhere',
+      'Rich station result cards reused across search tabs and the agent chat',
+      'Jest test suite for the mobile app',
+    ],
+    stack: ['React Native', 'TypeScript', 'iOS', 'Android', 'Jest'],
+    github: 'https://github.com/Girujan1998/gasagent-ai',
+    live: null,
+    related: 'gasagent-backend',
+    relatedLabel: 'View Backend →',
+    screenshots: [
+      { src: gasSearchImg, caption: 'Gas station search' },
+      { src: evSearchImg, caption: 'EV charging search' },
+      { src: aiAgentImg, caption: 'AI agent (multi-step)' },
+      { src: priceForecastImg, caption: 'Price forecast' },
+      { src: favoritesImg, caption: 'Favorites' },
+    ],
+  },
+  {
+    slug: 'gasagent-backend',
+    name: 'GasAgent.ai — Backend',
+    tagline: 'FastAPI service with a bounded tool-calling AI agent',
+    overview: [
+      'The GasAgent.ai backend is a FastAPI (Python) REST API that powers the mobile app. It handles gas and EV station search, fuel-cost arithmetic, and gas price forecasting, integrating a mix of free public and third-party data sources behind a single clean API surface.',
+      'Its centrepiece is an AI agent implemented as a bounded tool-calling loop over a large-language-model API. Given a goal like "what would it cost to fill up at the cheapest station near me?", the agent decides which tools to call and in what order, feeds each result into the next step, and continues — up to a bounded number of steps — until it can give a grounded answer.',
+      'The agent has five tools: gas station search, EV charging search, combined gas + EV search, fuel-cost arithmetic, and price forecasting. All filtering, sorting, ranking, and math happen in code — the model never reasons over raw result lists or does arithmetic itself; it only decides which tools to call and how to phrase the answer.',
+    ],
+    features: [
+      'REST API for gas station, EV charging, and combined station search',
+      'Bounded tool-calling agent loop over an LLM API with five code-backed tools',
+      'Deterministic fuel-cost arithmetic — computed in code, never by the model',
+      'Next-day gas price forecasting combining local average and regional trend',
+      'Third-party and public data source integration behind a unified API',
+      'Graceful degradation when optional API keys are absent',
+      'pytest test suite for the backend',
+    ],
+    stack: ['Python', 'FastAPI', 'REST APIs', 'LLM Tool-Calling', 'pytest'],
+    github: 'https://github.com/Girujan1998/gasagent-ai',
+    live: null,
+    related: 'gasagent-frontend',
+    relatedLabel: 'View Frontend →',
+  },
   {
     slug: 'eyeguide-frontend',
     name: 'EyeGuide — Frontend',
