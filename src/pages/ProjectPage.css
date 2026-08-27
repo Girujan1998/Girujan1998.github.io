@@ -123,6 +123,12 @@
   margin-bottom: 0;
 }
 
+/* ── Screenshots ── */
+.pp-screens-note {
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
 /* ── Features list ── */
 .pp-features {
   display: flex;

@@ -1,4 +1,5 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
@@ -10,6 +11,14 @@ import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import ProjectPage from './pages/ProjectPage';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function Portfolio() {
   return (
@@ -32,6 +41,7 @@ function App() {
   return (
     <HashRouter>
       <div className="App">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Portfolio />} />
           <Route path="/projects/:slug" element={<ProjectPage />} />
