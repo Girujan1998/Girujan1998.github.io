@@ -39,7 +39,7 @@ function ProjectPage() {
     <div className="pp-wrapper">
       <header className="pp-topbar">
         <div className="pp-topbar-inner">
-          <button className="pp-back" onClick={() => navigate('/')}>
+          <button className="pp-back" onClick={() => navigate('/', { state: { scrollTo: 'projects' } })}>
             <IconArrowLeft />
             <span>Back to Portfolio</span>
           </button>

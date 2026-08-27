@@ -13,10 +13,15 @@ import Contact from './sections/Contact';
 import ProjectPage from './pages/ProjectPage';
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, state } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const target = state?.scrollTo && document.getElementById(state.scrollTo);
+    if (target) {
+      target.scrollIntoView({ block: 'start' });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, state]);
   return null;
 }
 
