@@ -2,53 +2,144 @@
   background-color: var(--surface);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.project-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
-/* ── Card ── */
-.project-card {
+/* ── Group panel ── */
+.project-group {
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 26px;
+  padding: 28px;
+}
+
+.pg-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.pg-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--accent);
+  background-color: rgba(88, 166, 255, 0.08);
+  border: 1px solid rgba(88, 166, 255, 0.18);
+}
+
+.pg-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.pg-name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.pg-tagline {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.pg-repos-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.pg-repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-hover);
+  border-radius: 20px;
+  padding: 6px 13px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.pg-repo:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.pg-description {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+  max-width: 70ch;
+}
+
+.pg-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+/* ── Repo sub-cards ── */
+.pg-parts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.part-card {
   display: flex;
   flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 18px 16px;
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.part-card:hover {
+  transform: translateY(-3px);
   border-color: rgba(88, 166, 255, 0.35);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
-.project-card-top {
+.part-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 9px;
 }
 
-.project-icon {
-  color: var(--accent);
-  display: flex;
-  opacity: 0.9;
-}
-
-.project-links {
-  display: flex;
-  gap: 6px;
+.part-kind {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .proj-link {
   color: var(--text-subtle);
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 4px;
   border-radius: 4px;
   transition: color 0.2s;
 }
@@ -57,52 +148,50 @@
   color: var(--text);
 }
 
-/* ── Content ── */
-.project-name {
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 10px;
-}
-
-.project-description {
-  font-size: 14px;
+.part-blurb {
+  font-size: 12.75px;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.65;
   flex: 1;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
-.project-stack {
+.part-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: auto;
-  margin-bottom: 16px;
+  gap: 5px;
+  margin-bottom: 13px;
 }
 
-.project-cta {
+.part-cta {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11.5px;
   color: var(--accent);
   letter-spacing: 0.04em;
+  margin-top: auto;
   transition: letter-spacing 0.2s ease;
 }
 
-.project-card:hover .project-cta {
+.part-card:hover .part-cta {
   letter-spacing: 0.08em;
 }
 
-/* ── Responsive ── */
-@media (max-width: 960px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* ── Small tag variant ── */
+.tag.sm {
+  font-size: 10.5px;
+  padding: 2px 8px;
+  background-color: transparent;
+  color: var(--text-muted);
+  border-color: var(--border-hover);
 }
 
-@media (max-width: 560px) {
-  .projects-grid {
+/* ── Responsive ── */
+@media (max-width: 720px) {
+  .project-group {
+    padding: 20px;
+  }
+
+  .pg-parts {
     grid-template-columns: 1fr;
   }
 }
