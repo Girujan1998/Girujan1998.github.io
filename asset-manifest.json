@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38550bd1.css",
+    "main.js": "/static/js/main.6db79407.js",
+    "static/js/488.8df956ad.chunk.js": "/static/js/488.8df956ad.chunk.js",
+    "static/media/gas-search.png": "/static/media/gas-search.cf004415950eb68ed375.png",
+    "static/media/ev-search.png": "/static/media/ev-search.c8ac2e96b103f40f524f.png",
+    "static/media/ai-agent.png": "/static/media/ai-agent.f03499a80f500f23c2a1.png",
+    "static/media/favorites.png": "/static/media/favorites.2f640732ff53153888c2.png",
+    "static/media/price-forecast.png": "/static/media/price-forecast.74f00874c6cec355bbd0.png",
+    "index.html": "/index.html",
+    "main.38550bd1.css.map": "/static/css/main.38550bd1.css.map",
+    "main.6db79407.js.map": "/static/js/main.6db79407.js.map",
+    "488.8df956ad.chunk.js.map": "/static/js/488.8df956ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38550bd1.css",
+    "static/js/main.6db79407.js"
+  ]
+}
