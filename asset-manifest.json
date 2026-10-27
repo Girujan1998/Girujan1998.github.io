@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0099d373.css",
+    "main.js": "/static/js/main.cd66b059.js",
+    "static/js/488.8df956ad.chunk.js": "/static/js/488.8df956ad.chunk.js",
+    "static/media/gas-search.png": "/static/media/gas-search.cf004415950eb68ed375.png",
+    "static/media/ev-search.png": "/static/media/ev-search.c8ac2e96b103f40f524f.png",
+    "static/media/ai-agent.png": "/static/media/ai-agent.f03499a80f500f23c2a1.png",
+    "static/media/favorites.png": "/static/media/favorites.2f640732ff53153888c2.png",
+    "static/media/price-forecast.png": "/static/media/price-forecast.74f00874c6cec355bbd0.png",
+    "static/media/07-chat-sort-menu.png": "/static/media/07-chat-sort-menu.addd81f7d6aaa75735f2.png",
+    "static/media/05-search-filters.png": "/static/media/05-search-filters.34dbea86b131a5ff372c.png",
+    "static/media/06-chat-grid.png": "/static/media/06-chat-grid.d72c7ebab16e4c6e6f17.png",
+    "static/media/04-search-grid.png": "/static/media/04-search-grid.8e227d4019571ead5a60.png",
+    "static/media/08-chat-carousel.png": "/static/media/08-chat-carousel.18dcf909769d7153fac0.png",
+    "static/media/02-upload-progress.png": "/static/media/02-upload-progress.fa5d6ffe29de4047ade7.png",
+    "static/media/01-upload-empty.png": "/static/media/01-upload-empty.cf15c07b2722db7b600c.png",
+    "static/media/03-upload-done.png": "/static/media/03-upload-done.1aa7f7db8e13af830a1b.png",
+    "index.html": "/index.html",
+    "main.0099d373.css.map": "/static/css/main.0099d373.css.map",
+    "main.cd66b059.js.map": "/static/js/main.cd66b059.js.map",
+    "488.8df956ad.chunk.js.map": "/static/js/488.8df956ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0099d373.css",
+    "static/js/main.cd66b059.js"
+  ]
+}
