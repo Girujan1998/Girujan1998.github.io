@@ -104,6 +104,10 @@
   gap: 14px;
 }
 
+.pg-parts.single {
+  grid-template-columns: 1fr;
+}
+
 .part-card {
   display: flex;
   flex-direction: column;

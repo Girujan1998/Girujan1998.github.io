@@ -3,8 +3,35 @@ import evSearchImg from '../assets/ev-search.png';
 import aiAgentImg from '../assets/ai-agent.png';
 import priceForecastImg from '../assets/price-forecast.png';
 import favoritesImg from '../assets/favorites.png';
+import fmUploadEmptyImg from '../assets/flyer-mind-ai-screenshots/01-upload-empty.png';
+import fmUploadProgressImg from '../assets/flyer-mind-ai-screenshots/02-upload-progress.png';
+import fmUploadDoneImg from '../assets/flyer-mind-ai-screenshots/03-upload-done.png';
+import fmSearchGridImg from '../assets/flyer-mind-ai-screenshots/04-search-grid.png';
+import fmSearchFiltersImg from '../assets/flyer-mind-ai-screenshots/05-search-filters.png';
+import fmChatGridImg from '../assets/flyer-mind-ai-screenshots/06-chat-grid.png';
+import fmChatSortImg from '../assets/flyer-mind-ai-screenshots/07-chat-sort-menu.png';
+import fmChatCarouselImg from '../assets/flyer-mind-ai-screenshots/08-chat-carousel.png';
 
 export const PROJECT_GROUPS = [
+  {
+    name: 'Flyer Mind AI',
+    tagline: 'Searchable store flyers with an AI shopping agent',
+    icon: 'flyer',
+    description:
+      "A cross-platform mobile app that turns a store's weekly flyer PDF into a searchable catalogue of every product, price, and deal in it. A Node service runs Google Gemini vision over each page, stores the results in SQLite, and builds a price history across flyers. Shoppers search locally and offline, or ask an AI agent in plain language to find products, judge whether a price is a good deal, and set price alerts.",
+    stack: ['React Native', 'TypeScript', 'Node.js', 'Express', 'SQLite', 'Gemini'],
+    repos: [{ label: 'flyer-mind-ai', url: 'https://github.com/Girujan1998/flyer-mind-ai' }],
+    parts: [
+      {
+        slug: 'flyer-mind-ai',
+        kind: 'Mobile app + API',
+        blurb:
+          'React Native (iOS and Android) client in TypeScript with Upload, Search, and Chat tabs, backed by an Express server that extracts products with Gemini vision and answers each chat turn with one structured call that triggers deterministic search, price insight, or alert actions.',
+        stack: ['React Native', 'TypeScript', 'Express', 'SQLite', 'Gemini', 'Jest'],
+        github: 'https://github.com/Girujan1998/flyer-mind-ai',
+      },
+    ],
+  },
   {
     name: 'GasAgent.ai',
     tagline: 'Fuel & EV finder with a multi-step AI agent',
@@ -65,6 +92,41 @@ export const PROJECT_GROUPS = [
 ];
 
 export const PROJECTS = [
+  {
+    slug: 'flyer-mind-ai',
+    name: 'Flyer Mind AI',
+    tagline: 'Turn weekly store flyers into a searchable, price-aware catalogue',
+    overview: [
+      "Flyer Mind AI is a cross-platform React Native app (iOS and Android) that turns a store's weekly flyer PDF into a searchable catalogue of every product, price, and deal in it, and then lets shoppers find things by asking for them in plain language.",
+      'The app talks to a small Node and Express service. On upload, the server rasterises each flyer page with mupdf and sends it to Google Gemini vision, which returns every product with its name, price, size, category, department, sale status, and a bounding box on the page. Results are stored in SQLite along with page images and per-product crop thumbnails. Re-uploading the same PDF is matched by SHA-256 and returns the stored result instead of running Gemini again.',
+      'The Chat tab is an AI agent rather than a chatbot. Each turn is a single structured Gemini call that classifies the message into an action (search, price insight, or set alert), and the server then does the work deterministically against the database. The model never states a price or trend itself, so it cannot hallucinate a number. Every flyer stays in the database, so canonical product matching across flyers builds a real price history behind each item for deal-quality scoring, lowest-price tracking, and retailer comparison.',
+    ],
+    features: [
+      'Flyer PDF upload with Gemini vision extraction of every product, price, sale flag, and bounding box',
+      'Store name and validity window detection, so each product knows whether its flyer is active, upcoming, or expired',
+      'Resumable uploads that reconnect to the same job after a phone lock or network blip',
+      'Fast local search with a three-mode query classifier (aisle, specific item, or keyword) and relevance ranking',
+      'Faceted filters by department, store, flyer status, and on-sale, with counts that reflect the other selections',
+      'Source view that jumps to the exact spot on the rendered flyer page with the product highlighted',
+      'AI agent with one structured Gemini call per turn, driving deterministic search, price insight, and price alert actions',
+      'Canonical product matching across flyers for 90-day deal quality, lowest price, retailer comparison, and sale frequency',
+      'Lint, TypeScript, and Jest checks for the app',
+    ],
+    stack: ['React Native', 'TypeScript', 'Node.js', 'Express', 'SQLite', 'Google Gemini', 'Jest'],
+    github: 'https://github.com/Girujan1998/flyer-mind-ai',
+    live: null,
+    related: null,
+    screenshots: [
+      { src: fmUploadEmptyImg, caption: 'Upload a flyer' },
+      { src: fmUploadProgressImg, caption: 'Extraction in progress' },
+      { src: fmUploadDoneImg, caption: 'Extraction complete' },
+      { src: fmSearchGridImg, caption: 'Product search' },
+      { src: fmSearchFiltersImg, caption: 'Search filters' },
+      { src: fmChatGridImg, caption: 'AI agent results' },
+      { src: fmChatSortImg, caption: 'Sorting agent results' },
+      { src: fmChatCarouselImg, caption: 'Carousel view' },
+    ],
+  },
   {
     slug: 'gasagent-frontend',
     name: 'GasAgent.ai — Frontend',
